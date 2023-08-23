@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      .carousel .carousel-indicators {
+        position: absolute;
+        bottom: initial !important;
+        left: 35%;
+        transform: translateX(-50%);
+        display: flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      .carousel .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 0 5px;
+        transition: 0.3s ease;
+      }
+
+      .carousel .carousel-indicators li.active {
+        background-color: #ff3d00;
+      }
+      .carousel .carousel-caption {
+        position: initial !important;
+        color: black;
+        font-size: 36px !important;
+        font-weight: 400;
+        text-align: center !important;
+        height: 400px !important;
+      }
+      .theme-color {
+        color: #ff3d00 !important;
+      }
+
+      .mt-lg-30 {
+        margin-top: 10rem !important;
+      }
+
+      .get-start-bg-image {
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.064),
+            rgba(90, 89, 89, 0.437)
+          ),
+          url("cover.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      .theme-btn {
+        color: rgb(255, 255, 255);
+        font-size: 1.5em !important;
+        font-weight: 400;
+        background-color: #ff0000 !important;
+      }
+      .theme-heading {
+        color: rgb(255, 255, 255);
+        font-size: 1.5em !important;
+      }
+
+      .theme-btn-dark {
+        color: white !important;
+        background-color: black !important;
+      }
+      .theme-btn-dark:hover {
+        color: white !important;
+        background-color: rgb(52, 52, 52) !important;
+      }
+      @media only screen and (max-width: 786px) {
+        .carousel-inner img {
+          height: 500px !important;
+        }
+
+        .mt-30 {
+          margin-top: 10rem !important;
+        }
+        .mt-60 {
+          margin-top: 20rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div class="get-start-bg-image">
+        <div class="container">
+          <div class="row justify-content-center align-items-center pt-5">
+            <img src="logo.png" class="mt-60" width="30%" />
+            <div class="col-lg-12 col-10">
+              <button class="btn theme-btn w-100 p-3 mt-5">Get Started</button>
+            </div>
+            <h1 class="theme-heading mt-5">lOCATE YOUR LEISURE.</h1>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
